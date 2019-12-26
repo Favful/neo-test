@@ -472,14 +472,11 @@ html, body, input, input::placeholder {
 }
 
 .bottom-menu {
-    
     background: white;
-    padding: 1.5rem;
-
-    box-shadow: 0 0 2rem #E7E8E7;
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
-
+    padding: 1.5rem 1rem 1rem 1rem;
+    box-shadow: 0 0 2rem #E0E0E0;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
