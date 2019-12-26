@@ -79,6 +79,7 @@ html, body, input, input::placeholder {
 
     background: #FFE2B8;
     height: 25rem;
+    overflow: hidden;
 }
 
 .app-header .icon {
@@ -95,8 +96,35 @@ html, body, input, input::placeholder {
     right: 1rem;
 }
 
+.app-header .hero {
+    position: absolute;
+    top: 0;
+    height: 22.5rem;
+}
+
+.app-header .caption {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    padding-right: 3rem;
+}
+
+.app-header .caption p {
+    padding: 0;
+    margin: 0;
+    font-size: .85rem;
+}
+
+.app-header .caption h1 {
+    margin: 0;
+    margin-top: .8rem;
+    max-width: 150px;
+    line-height: 2.2rem;
+}
+
 .app-brand {
     padding-top: 2rem;
+    z-index: 100;
 }
 
 .wave {
