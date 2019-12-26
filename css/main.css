@@ -74,7 +74,7 @@ html, body, input, input::placeholder {
 }
 
 .app-header {
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
     position: relative;
 
     background: #FFE2B8;
@@ -93,6 +93,10 @@ html, body, input, input::placeholder {
 
 .app-header .icon.cart {
     right: 1rem;
+}
+
+.app-brand {
+    padding-top: 2rem;
 }
 
 .wave {
@@ -516,8 +520,31 @@ html, body, input, input::placeholder {
     padding-right: 1rem;
 }
 
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
 .app-footer {
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+.app-footer .signup {
+    text-align: center;
+    background: url(../img/signup_img.svg) center top no-repeat;
+    text-align: center;
+    padding-top: 18rem;
+}
+
+.app-footer .signup-label {
+
+}
+
+.app-footer .signup-link {
+    background: #FF6978;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    color: white;
 }
 
 
