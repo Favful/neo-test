@@ -556,6 +556,16 @@ html, body, input, input::placeholder {
     padding-right: 1rem;
 }
 
+.max-width-800 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wave {
+    height: 3rem;
+    width: 100%;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
