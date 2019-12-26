@@ -95,6 +95,11 @@ html, body, input, input::placeholder {
     right: 1rem;
 }
 
+.wave {
+    position: absolute;
+    bottom: 0;
+}
+
 .brand-link {
     display: block;
     margin: 0 auto;
@@ -106,7 +111,7 @@ html, body, input, input::placeholder {
 }
 
 .app-search {
-    margin-top: 1rem;
+    margin-top: -1rem;
     position: relative;
     padding: .5rem 1rem;
 }
@@ -389,13 +394,17 @@ html, body, input, input::placeholder {
     border-top-left-radius: 0;
 }
 
+#experts:checked ~ section .experts {
+    border-top-right-radius: 0;
+}
+
 #heavyweights:checked ~ nav .heavyweights,
 #users:checked ~ nav .users,
 #experts:checked ~ nav .experts {
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     color: white;
-    /*background: #FF6978;*/
-    background: #FFF6F6;
+    background: #FEF4ED;
 }
 
 .tab-container {
@@ -421,7 +430,7 @@ html, body, input, input::placeholder {
 
 .tab-container .tab-nav .nav-item label {
     display: block;
-    padding: .5rem 1rem;
+    padding: .8rem 1rem;
     border-radius: 1.2rem;
 }
 
@@ -429,7 +438,19 @@ html, body, input, input::placeholder {
 #users:checked ~ nav .users label,
 #experts:checked ~ nav .experts label {
     background: #FF6978;
+}
+
+#heavyweights:checked ~ nav .heavyweights label {
     border-bottom-right-radius: 0;
+}
+
+#users:checked ~ nav .users label {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#experts:checked ~ nav .experts label {
+    border-bottom-left-radius: 0;
 }
 
 .tab-container .tab-nav .nav-item label:active {
@@ -440,6 +461,68 @@ html, body, input, input::placeholder {
     /*background: #ccc;*/
     font-size: .85rem;
 }
+/* ==========================================================================
+   Bottom menu
+   ========================================================================== */
+.menu-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: .85rem;
+}
+
+.bottom-menu {
+    
+    background: white;
+    padding: 1.5rem;
+
+    box-shadow: 0 0 2rem #E7E8E7;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    border: 0;
+    background: none;
+}
+
+.btn.add-content {
+    background: #FF6978;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.btn img {
+    height: 1.2rem;
+    vertical-align: text-bottom;
+}
+
+.btn .label {
+    display: none;
+}
+
+.btn.active .label {
+    display: inline;
+    padding-left: .2rem;
+}
+
+.btn.active {
+    background: #FFE8EF;
+    color: #FF6978;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.app-footer {
+    margin-bottom: 6rem;
+}
+
 
 /* ==========================================================================
    Media Queries
