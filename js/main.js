@@ -25,5 +25,5 @@ const logolist = tns({
   controls: false,
   loop: false,
   nav: false,
-  autoWidth: true
+  fixedWidth: 100
 })
