@@ -195,8 +195,12 @@ html, body, input, input::placeholder {
 }
 
 .section-header {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
+}
+
+.usp .section-header {
+    margin-bottom: 0;
 }
 
 .usp-container {
