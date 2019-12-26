@@ -142,8 +142,12 @@ html, body, input, input::placeholder {
     height: 1.5rem;
 }
 
+.usp {
+    margin-top: -2rem;
+}
+
 .app-search {
-    margin-top: -1rem;
+    margin-top: 1rem;
     position: relative;
     padding: .5rem 1rem;
 }
