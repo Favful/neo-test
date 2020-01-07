@@ -11,7 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Karla|Lora&display=swap"></link>
+    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap"></link>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i&display=swap');
+    </style>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -29,9 +32,6 @@
         <p>People-tested Beauty</p>
         <h1>Favful Community</h1>
       </span> -->
-
-      <img src="img/menu.svg" class="menu icon">
-      <img src="img/shoping_cart_base.svg" class="cart icon">
 
       <section id="branding" class="app-brand">
         <a href="/" class="brand-link">
@@ -53,25 +53,35 @@
             <path class="cls-1" d="M0,28.55s26,14.28,89,8.57c21-2.14,44-8.57,77,20.7,11,7.14,29,16.42,64,13.57,11-.72,36-.72,68-21.42S350,9.28,407,9.28s66,0,93-9.28V118.5H0Z" />
           </g>
         </g>
-    </svg>
+      </svg>
+
+      <img src="img/menu.svg" class="menu icon">
+      <img src="img/shoping_cart_base.svg" class="cart icon">
     </header>
 
     <main class="main-content">
-      <section class="usp frontpage-section max-width-800">
-        <h2 class="section-header">Where personal grooming products are people-tested</h2>
+      <section class="usp-section max-width-800">
+        <h2 class="section-panel title-usp">Where personal grooming products are people-tested</h2>
+        <ul class="section-panel usp-item-container flatlist">
+          <li class="usp">
+            <img src="img/usp-worldwide.svg" class="icon">
 
-        <ul class="usp-container">
-          <li class="item">
-            <img src="img/icon_worldwide.svg" class="usp-icon">
-            <span class="usp-label">Validated Worldwide Cult Favs</span>
+            <span class="label">Validated worldwide cult favs</span>
           </li>
-          <li class="item">
-            <img src="img/icon_recommendation.svg" class="usp-icon">
-            <span class="usp-label">44k Honest Recommenders</span>
+
+          <li class="usp">
+            <img src="img/usp-recommenders.svg" class="icon">
+            <span class="label">Tested by 44k honest reviewers</span>
           </li>
-          <li class="item">
-            <img src="img/icon_authentic.svg" class="usp-icon">
-            <span class="usp-label">100% Authentic</span>
+
+          <li class="usp">
+            <img src="img/usp-authentic.svg" class="icon">
+            <span class="label">3-stars and above ratings only</span>
+          </li>
+
+          <li class="usp">
+            <img src="img/usp-personalized.svg" class="icon">
+            <span class="label">Personalized curations</span>
           </li>
         </ul>
       </section>
@@ -84,7 +94,7 @@
 
 
       <section class="categories frontpage-section max-width-800">
-        <h2 class="section-header">Categories</h2>
+        <h2 class="section-header">Explore by categories</h2>
 
         <ul class="slider-container">
           <li class="item">
@@ -121,7 +131,7 @@
 
 
       <section class="recommended-by frontpage-section max-width-800">
-        <h2 class="section-header">Recommended by</h2>
+        <h2 class="section-header">Explore by recommendations</h2>
 
         <section class="tab-container">
           <input id="heavyweights" type="radio" name="pct" checked="checked" >
@@ -329,7 +339,7 @@
 
 
       <section class="categories frontpage-section max-width-800">
-        <h2 class="section-header">Skin types</h2>
+        <h2 class="section-header">Explore by skin types</h2>
 
         <ul class="slider-container">
           <li class="item">
@@ -403,8 +413,6 @@
     </main>
 
     <footer class="app-footer">
-
-
       <section class="signup">
         <!-- <img src="img/signup_img.svg"> -->
 
@@ -415,12 +423,14 @@
 
     <!-- fixed menu -->
     <nav class="menu-container">
-      <section class="bottom-menu">
-        <button class="btn add-content"><img src="img/icon_add.svg"></button>
-        <button class="btn home active"><img src="img/icon_home_selected.svg"> <span class="label">Home</span></button>
-        <button class="btn liked"><img src="img/icon_like.svg"> <span class="label">Likes</span></button>
-        <button class="btn notifications"><img src="img/icon_notification.svg"> <span class="label">Notifications</span></button>
-        <button class="btn user"><img src="img/icon_user.svg"> <span class="label">Profile</span></button>
+      <section class="">
+        <div class="bottom-menu max-width-800">
+          <button class="btn add-content"><img src="img/icon_add.svg"></button>
+          <button class="btn home active"><img src="img/icon_home_selected.svg"> <span class="label">Home</span></button>
+          <button class="btn liked"><img src="img/icon_like.svg"> <span class="label">Likes</span></button>
+          <button class="btn notifications"><img src="img/icon_notification.svg"> <span class="label">Notifications</span></button>
+          <button class="btn user"><img src="img/icon_user.svg"> <span class="label">Profile</span></button>
+        </div>
       </section>
     </nav>
 
