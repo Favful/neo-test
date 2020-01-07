@@ -772,6 +772,11 @@ html, body, input, input::placeholder {
     margin-bottom: 3rem;
 }
 
+.link-usp {
+    font-size: .8em;
+    color: #CF9569;
+}
+
 
 @media (min-width: 768px) {
     .usp-section .usp-item-container {
@@ -782,5 +787,5 @@ html, body, input, input::placeholder {
     .usp-section .usp-item-container .usp .icon {
         height: 4rem;  
     }
-  }
 }
+
